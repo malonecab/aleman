@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Word:</b>
+  <%= @noun.word %>
+</p>
+
+<p>
+  <b>Article:</b>
+  <%= @noun.article %>
+</p>
+
+<p>
+  <b>Plural:</b>
+  <%= @noun.plural %>
+</p>
+
+<p>
+  <b>Translation:</b>
+  <%= @noun.translation %>
+</p>
+
+
+<%= link_to 'Edit', edit_noun_path(@noun) %> |
+<%= link_to 'Back', nouns_path %>

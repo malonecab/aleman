@@ -1,0 +1,29 @@
+<h1>Listing nouns</h1>
+
+<table>
+  <tr>
+    <th>Word</th>
+    <th>Article</th>
+    <th>Plural</th>
+    <th>Translation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nouns.each do |noun| %>
+  <tr>
+    <td><%= noun.word %></td>
+    <td><%= noun.article %></td>
+    <td><%= noun.plural %></td>
+    <td><%= noun.translation %></td>
+    <td><%= link_to 'Show', noun %></td>
+    <td><%= link_to 'Edit', edit_noun_path(noun) %></td>
+    <td><%= link_to 'Destroy', noun, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Noun', new_noun_path %>
