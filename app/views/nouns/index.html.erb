@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Word</th>
     <th>Article</th>
+    <th>Word</th>
     <th>Plural</th>
     <th>Translation</th>
     <th></th>
@@ -13,8 +13,8 @@
 
 <% @nouns.each do |noun| %>
   <tr>
-    <td><%= noun.word %></td>
     <td><%= noun.article %></td>
+    <td><%= noun.word %></td>
     <td><%= noun.plural %></td>
     <td><%= noun.translation %></td>
     <td><%= link_to 'Show', noun %></td>
@@ -27,3 +27,5 @@
 <br />
 
 <%= link_to 'New Noun', new_noun_path %>
+     <%= link_to 'Play',play_path %>
+

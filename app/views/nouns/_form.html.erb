@@ -12,11 +12,13 @@
   <% end %>
 
    <div class="field">
-    <%= f.label :article %><br />
-    <%= f.radio_button("noun","article","der") %>
-    <%= f.radio_button("noun","article","das") %>
-    <%= f.radio_button("noun","article","die") %>
+
+    <%= f.label :article,"Der" %><%= f.radio_button(:article, "der") %>
+    <%= f.label :article,"Das" %><%= f.radio_button(:article, "das") %>
+    <%= f.label :article,"Die" %><%= f.radio_button(:article, "die") %>
   </div>
+
+
 
 
 

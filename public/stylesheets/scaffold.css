@@ -54,3 +54,42 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+<style type="text/css">
+body {
+	font:1.0em Arial, Helvetica, sans-serif;
+	background:#fff;
+	margin:50px;
+}
+
+h1 {
+	font-size:200%;
+	color:#990000;
+	border-top:2px solid #990000;
+	margin:10px 0px 5px 0px;
+}
+
+table {
+	margin:20px auto;
+	border-collapse:separate;
+}
+
+td {
+	border:1px solid #dddab5;
+	color:#663300;
+	background-color:#f5f3de;
+	text-align:left;
+	padding:5px 10px;
+}
+
+td a {
+	padding:5px 10px;
+	display:block;
+}
+
+td a:hover {
+	color:#009900;
+	background-color:#CCFFCC;
+}
+
+

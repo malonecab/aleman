@@ -1,0 +1,29 @@
+<h1>Play!</h1>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>Article</th>
+    <th>Word</th>
+    <th>Plural</th>
+    <th>Translation</th>
+  </tr>
+
+  <tr>
+    <td><%= @noun.id %></td>
+    <td><%= @noun.article %></td>
+    <td><%= @noun.word %></td>
+    <td><%= @noun.plural %></td>
+    <td><%= @noun.translation %></td>
+  </tr>
+</table>
+
+<br />     <br />
+
+<% @mostrar.each do |n| %>
+  <%= n %>  ||
+
+<% end %>
+           <br />
+  <%= link_to 'Finish',reset_path %>
+</table>
