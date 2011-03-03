@@ -1,8 +1,10 @@
 Aleman::Application.routes.draw do
 
-  root :to => "nouns#index"
-  match "/nouns/play" => 'nouns#play', :as => 'play'
-  match "/nouns/reset" => 'nouns#reset', :as => 'reset'
+  root :to => "nouns#play"
+  get "/nouns/play" => 'nouns#play', :as => 'play'
+  #post "/nouns/validate" => 'nouns#validate', :as => 'validate'
+  post "/nouns/next" => 'nouns#next', :as => 'next'
+  get "/nouns/finish" => 'nouns#finish', :as => 'finish'
   resources :nouns
 
   # The priority is based upon order of creation:

@@ -7,23 +7,57 @@ class NounsController < ApplicationController
   #finish -> mostramos estadisticas de resultados y reseteamos
 
   def play
-    @noun = Noun.find(:random)
+    session[:play_list] = []
+    session[:hits] = 0
 
-    play_list = session[:play_list]
-    play_list = [] if play_list.nil?
+    @hits = session[:hits]
+
+    play_list = session[:play_list]   #quitar la @ para que no sea accesible
+
+    @noun = Noun.find(:random)
 
     session[:play_list] = play_list.push(@noun.id)
 
-    @mostrar = session[:play_list] #quitar luego
     respond_to do |format|
       format.html # play.html.erb
     end
   end
 
-  def reset
+  def next
+    #validamos resultado
+    @article_f = params[:commit]
+    @article = params[:article]
+
+    @hit = 0
+    if @article_f.downcase == @article.downcase
+      session[:hits] = session[:hits] + 1
+      @hit = 1
+    end
+    @hits = session[:hits]
+
+    #buscamos nueva palabra a mostrar
+    play_list = session[:play_list]
+    play_list = [] if play_list.nil?
+
+    @nouns_played = play_list.length
+
+    @noun = Noun.find(:random, @play_list)
+    session[:play_list] = play_list.push(@noun.id)
+
+    render 'play'
+  end
+
+  def finish
     #mostrar resumen
+    @hits = session[:hits]
+    play_list = session[:play_list]
+    @nouns_played = play_list.length - 1 #porque la última carta mostrada no se juega
+
     reset_session
-    redirect_to root_path, :notice => "Game Over!"
+
+    respond_to do |format|
+      format.html # play.html.erb
+    end
   end
 
   # GET /nouns
