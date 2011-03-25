@@ -1,0 +1,52 @@
+
+  <%= form_tag(validation_path, :method => "post", :name => "tarjeta") do %>
+     <div id="middleonePan">
+       <ul class="block">
+        <li><%= link_to_function "Der", "document.tarjeta['commit'].value='der'; document.tarjeta.submit()", :disabled => true %></li>
+      </ul>
+    </div>
+
+      <div id="middletwoPan">
+       <ul class="block">
+        <li><%= link_to_function "Das", "document.tarjeta['commit'].value='das'; document.tarjeta.submit()", :disabled => true %></li>
+      </ul>
+    </div>
+
+      <div id="middlethreePan">
+       <ul class="block">
+        <li><%= link_to_function "Die", "document.tarjeta['commit'].value='die'; document.tarjeta.submit()", :disabled => true %></li>
+      </ul>
+    </div>
+
+
+
+
+      <%= hidden_field_tag(:commit, '') %>
+              <%= hidden_field_tag(:id, @noun.id) %>
+              <%= hidden_field_tag(:word, @noun.word) %>
+              <%= hidden_field_tag(:article, @noun.article) %>
+              <%#= hidden_field_tag(:translate, @noun.translation) %>
+
+              <%#div id="traduccion">
+                 <%#= radio_button_tag  'translation_f', @translations[0].to_s, false,
+                              :onclick => "document.getElementById('der').disabled=false;
+                                           document.getElementById('die').disabled=false;
+                                           document.getElementById('das').disabled=false;" %>
+                 <%#= label_tag @translations[0].to_s, @translations[0].to_s %>
+
+                 <%#= radio_button_tag 'translation_f', @translations[1].to_s, false,
+                              :onclick => "document.getElementById('der').disabled=false;
+                                           document.getElementById('die').disabled=false;
+                                           document.getElementById('das').disabled=false;" %>
+                 <%#= label_tag @translations[1].to_s, @translations[1].to_s %>
+
+                 <%#= radio_button_tag 'translation_f', @translations[2].to_s, false,
+                              :onclick => "document.getElementById('der').disabled=false;
+                                           document.getElementById('die').disabled=false;
+                                           document.getElementById('das').disabled=false;" %>
+                 <%#= label_tag @translations[1].to_s, @translations[2].to_s %>
+              </div>
+        <% end %>
+              <%#= submit_tag("Der", :class => "button", :disabled => false, :id => "der") %>
+              <%#= submit_tag("Das", :class => "button", :disabled => true, :id => "das") %>
+              <%#= submit_tag("Die", :class => "button", :disabled => true, :id => "die") %>

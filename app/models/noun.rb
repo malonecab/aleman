@@ -13,10 +13,9 @@ class Noun < ActiveRecord::Base
         sql = "SELECT id FROM nouns"
 
         if args.second.is_a?(Array)
-             condition = args.second.to_s.gsub("[","(")
-             condition = condition.gsub("]",")")
-             sql << " where id NOT IN " + condition
-        end
+             [ "a", "b", "c" ].join("-")
+             sql << " where id NOT IN (" + args.second.join(",") + ")"
+         end
       ids = connection.select_all(sql)
       super(ids[rand(ids.length)]["id"].to_i)
     else

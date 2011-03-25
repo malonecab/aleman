@@ -1,0 +1,13 @@
+<div id="bodytopmainPan">
+  <div id="bodytopPan">
+    <h2>
+      <%= image_tag('hit.png', :size => "100x100") if @hit_article==1 %>
+      <%= image_tag('fail.png', :size => "100x100") if @hit_article==0 %>
+    <%= @word_hit %></h2>
+    <p class="more"><%= link_to 'Siguiente', next_path %></p>
+  </div>
+</div>
+
+
+
+

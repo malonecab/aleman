@@ -1,10 +1,13 @@
 Aleman::Application.routes.draw do
 
-  root :to => "nouns#play"
-  get "/nouns/play" => 'nouns#play', :as => 'play'
-  #post "/nouns/validate" => 'nouns#validate', :as => 'validate'
-  post "/nouns/next" => 'nouns#next', :as => 'next'
-  get "/nouns/finish" => 'nouns#finish', :as => 'finish'
+  root :to => "play#start"
+  get "/play/start" => 'play#start', :as => 'play'
+  post "/play/validation" => 'play#validation', :as => 'validation'
+
+  get "/play/next" => 'play#start', :as => 'next'
+  get "/play/finish" => 'play#finish', :as => 'finish'
+
+
   resources :nouns
 
   # The priority is based upon order of creation:
