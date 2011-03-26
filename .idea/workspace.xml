@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bdb72495-552d-4db4-a68f-b77244c77c02" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/noun.rb" afterPath="$PROJECT_DIR$/app/models/noun.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/play_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/play_controller.rb" />
     </list>
     <ignored path="aleman.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="play_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="10" selection-start="1681" selection-end="1688" vertical-scroll-proportion="0.0">
+            <state line="14" column="42" selection-start="407" selection-end="407" vertical-scroll-proportion="0.48445597">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noun.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="noun.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/noun.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="20" selection-start="502" selection-end="502" vertical-scroll-proportion="0.7927461">
+            <state line="18" column="20" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,9 +111,9 @@
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/play/finish.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/play.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/play_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/play/start.html.erb" />
         <option value="$PROJECT_DIR$/app/models/noun.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/play_controller.rb" />
       </list>
     </option>
   </component>
@@ -636,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="10" selection-start="1681" selection-end="1688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/play/start.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.576923">
@@ -652,7 +645,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/noun.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="502" selection-end="502" vertical-scroll-proportion="0.7927461">
+        <state line="18" column="20" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="42" selection-start="407" selection-end="407" vertical-scroll-proportion="0.48445597">
           <folding />
         </state>
       </provider>
