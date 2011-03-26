@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdb72495-552d-4db4-a68f-b77244c77c02" name="Default" comment="Resolución problema con random">
+    <list default="true" id="bdb72495-552d-4db4-a68f-b77244c77c02" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/play_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/play_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/play/start.html.erb" afterPath="$PROJECT_DIR$/app/views/play/start.html.erb" />
     </list>
     <ignored path="aleman.iws" />
     <ignored path=".idea/workspace.xml" />
