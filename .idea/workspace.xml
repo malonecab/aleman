@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdb72495-552d-4db4-a68f-b77244c77c02" name="Default" comment="">
+    <list default="true" id="bdb72495-552d-4db4-a68f-b77244c77c02" name="Default" comment="Resolución problema con random">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/play_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/play_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/play/start.html.erb" afterPath="$PROJECT_DIR$/app/views/play/start.html.erb" />
     </list>
     <ignored path="aleman.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +31,7 @@
       <file leaf-file-name="start.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/play/start.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.576923">
+            <state line="6" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -45,19 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffold.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="23" selection-start="10415" selection-end="10415" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="play_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="407" selection-end="407" vertical-scroll-proportion="0.48445597">
+            <state line="14" column="106" selection-start="471" selection-end="471" vertical-scroll-proportion="0.22020726">
               <folding />
             </state>
           </provider>
@@ -111,8 +103,8 @@
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/play/finish.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/play.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/play/start.html.erb" />
         <option value="$PROJECT_DIR$/app/models/noun.rb" />
+        <option value="$PROJECT_DIR$/app/views/play/start.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/play_controller.rb" />
       </list>
     </option>
@@ -577,11 +569,6 @@
         <state line="17" column="3" selection-start="581" selection-end="581" vertical-scroll-proportion="-11.115385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="23" selection-start="10415" selection-end="10415" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/play/validation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
@@ -622,23 +609,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/play/finish.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/play.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="40" selection-start="257" selection-end="257" vertical-scroll-proportion="0.20668693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/play/start.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.576923">
           <folding />
         </state>
       </provider>
@@ -650,9 +623,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="23" selection-start="10415" selection-end="10415" vertical-scroll-proportion="0.04557641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/play/finish.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/play/start.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="407" selection-end="407" vertical-scroll-proportion="0.48445597">
+        <state line="14" column="106" selection-start="471" selection-end="471" vertical-scroll-proportion="0.22020726">
           <folding />
         </state>
       </provider>
