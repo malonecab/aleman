@@ -17,7 +17,7 @@ class Noun < ActiveRecord::Base
          end
       ids = connection.select_all(sql)
         puts sql
-      super(ids[random(ids.length)]["id"].to_i)
+      super(ids[RANDOM(ids.length)]["id"].to_i)
     else
       super
     end
