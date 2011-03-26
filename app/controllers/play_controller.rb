@@ -9,6 +9,7 @@ class PlayController < ApplicationController
     play_list = Get_play_list()
     @nouns_played = play_list.length
 
+    @aux = play_list
     unless @nouns_played == Noun.count
       @noun = Noun.find(:random)              #obtenemos la palabra a mostrar
       #@translations = get_random_translations(@noun)
@@ -50,19 +51,9 @@ class PlayController < ApplicationController
      reset_session
 
      respond_to do |format|
-       format.html # start.html.erb
+       format.html # finish.html.erb
      end
    end
-
-  #def Get_play_list_length
-  #  play_list = session[:play_list]
-  #  play_list = [] if play_list.nil?
-  #  return play_list.length
-  #end
-
- def Get_hits_article
-   session[:hits_article].nil? ? 0 : session[:hits_article]
- end
 
   def Get_play_list
    session[:play_list].nil? ? [] : session[:play_list]
@@ -71,6 +62,10 @@ class PlayController < ApplicationController
  def Push_play_list(id)
     session[:play_list] = [] if session[:play_list].nil?
     session[:play_list] = session[:play_list].push(id)
+ end
+
+ def Get_hits_article
+   session[:hits_article].nil? ? 0 : session[:hits_article]
  end
 
  def Push_hits_article
