@@ -13,11 +13,11 @@ class Noun < ActiveRecord::Base
         sql = "SELECT id FROM nouns"
 
         if args.second.is_a?(Array)
-             [ "a", "b", "c" ].join("-")
              sql << " where id NOT IN (" + args.second.join(",") + ")"
          end
       ids = connection.select_all(sql)
-      super(ids[rand(ids.length)]["id"].to_i)
+        puts sql
+      super(ids[random(ids.length)]["id"].to_i)
     else
       super
     end

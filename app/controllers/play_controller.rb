@@ -10,6 +10,7 @@ class PlayController < ApplicationController
     @nouns_played = play_list.length
 
     @aux = play_list
+    @aux2 = session[:sql]
     unless @nouns_played == Noun.count
       @noun = Noun.find(:random)              #obtenemos la palabra a mostrar
       #@translations = get_random_translations(@noun)
