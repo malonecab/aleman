@@ -66,7 +66,7 @@
       <file leaf-file-name="noun.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/noun.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="525" selection-end="525" vertical-scroll-proportion="0.8367876">
+            <state line="18" column="20" selection-start="502" selection-end="502" vertical-scroll-proportion="0.7927461">
               <folding />
             </state>
           </provider>
@@ -652,7 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/noun.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="525" selection-end="525" vertical-scroll-proportion="0.8367876">
+        <state line="18" column="20" selection-start="502" selection-end="502" vertical-scroll-proportion="0.7927461">
           <folding />
         </state>
       </provider>
