@@ -47,7 +47,7 @@
       <file leaf-file-name="play_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="31" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.22020726">
+            <state line="44" column="16" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.19113573">
               <folding />
             </state>
           </provider>
@@ -452,7 +452,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -588,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="31" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.22020726">
+        <state line="44" column="16" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.19113573">
           <folding />
         </state>
       </provider>

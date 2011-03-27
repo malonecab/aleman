@@ -7,7 +7,7 @@ class PlayController < ApplicationController
 
     @hits_article = Get_hits_article()
     play_list = Get_play_list()
-    @nouns_played = play_list.length
+    @nouns_played = play_list.length - 1
 
     unless @nouns_played == Noun.count
       @noun = Noun.find(:random, play_list)              #obtenemos la palabra a mostrar, pasando la lista
@@ -45,7 +45,7 @@ class PlayController < ApplicationController
      #mostrar resumen
      @hits_article = Get_hits_article()
      #@hits_translation = session[:hits_translation]
-     @nouns_played = Get_play_list().length
+     @nouns_played = Get_play_list().length - 1
 
      reset_session
 
@@ -55,11 +55,11 @@ class PlayController < ApplicationController
    end
 
   def Get_play_list
-   session[:play_list].nil? ? [] : session[:play_list]
+   session[:play_list].nil? ? [0] : session[:play_list]
   end
 
  def Push_play_list(id)
-    session[:play_list] = [] if session[:play_list].nil?
+    session[:play_list] = [0] if session[:play_list].nil?
     session[:play_list] = session[:play_list].push(id)
  end
 
