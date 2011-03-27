@@ -55,11 +55,11 @@ class PlayController < ApplicationController
    end
 
   def Get_play_list
-   session[:play_list].nil? ? [] : session[:play_list]
+   session[:play_list].nil? ? [0] : session[:play_list]
   end
 
  def Push_play_list(id)
-    session[:play_list] = [] if session[:play_list].nil?
+    session[:play_list] = [0] if session[:play_list].nil?
     session[:play_list] = session[:play_list].push(id)
  end
 
