@@ -47,7 +47,7 @@
       <file leaf-file-name="play_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="28" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+            <state line="57" column="31" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.22020726">
               <folding />
             </state>
           </provider>
@@ -588,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="28" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+        <state line="57" column="31" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.22020726">
           <folding />
         </state>
       </provider>
