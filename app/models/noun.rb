@@ -13,7 +13,7 @@ class Noun < ActiveRecord::Base
         sql = "SELECT id FROM nouns"
 
         if args.second.is_a?(Array)
-             sql << " where id NOT IN (" + args.second.join(",") + ")"
+             sql << " where id NOT IN (" + args.second.join(",") + ")"     if args.second.length
          end
       ids = connection.select_all(sql)
         puts sql
